@@ -1,30 +1,36 @@
 # 🩺 Dr. Buddy
 
-**Dr. Buddy** is an AI-powered Android application designed to help users better understand their medical reports. Users can upload an image of a medical report or enter medical information as text, and the app uses Generative AI to provide simplified explanations in an easy-to-understand format.
+**Dr. Buddy** is an AI-powered Android application that helps users understand their medical reports with ease. Users can upload a medical report image or enter medical information as text, and the app uses **Gemini 3 Flash Preview** to analyze the content and provide clear explanations in **both English and Sinhala**.
 
-> **Making medical information easier to understand with AI.**
+In addition to explaining medical reports, Dr. Buddy also provides general guidance on possible next steps a patient should consider. The application is designed to make complex medical information more accessible while encouraging users to seek professional medical advice when needed.
 
 ---
 
-## 📱 Features
+## ✨ Features
 
 - 🤖 **AI-Powered Medical Report Analysis**
-  - Uses Generative AI to interpret medical reports and health-related information.
+  - Analyzes medical reports using **Gemini 3 Flash Preview**.
 
-- 📷 **Image-Based Analysis**
-  - Upload photos of laboratory reports, prescriptions, or other medical documents for AI analysis.
+- 📷 **Image Upload Support**
+  - Upload photos of laboratory reports or other medical documents.
 
-- ✍️ **Text-Based Analysis**
-  - Enter medical report details manually and receive AI-generated explanations.
+- ✍️ **Manual Text Input**
+  - Enter medical report details manually for AI analysis.
 
-- 📋 **Simple & Easy-to-Understand Results**
-  - Converts complex medical terminology into user-friendly summaries.
+- 🌍 **Bilingual Explanations**
+  - Generates easy-to-understand explanations in:
+    - 🇬🇧 English
+    - 🇱🇰 Sinhala
+
+- 💡 **Patient Guidance**
+  - Suggests general recommendations on what the patient should do next based on the report, such as consulting a doctor or following up with additional tests.
+  - *(These are informational suggestions only and not medical advice.)*
 
 - ⚡ **Fast AI Responses**
-  - Provides quick insights using Firebase Generative AI integration.
+  - Delivers quick and reliable results using Google's Gemini AI model.
 
-- 🎨 **Modern Android UI**
-  - Clean and intuitive interface built with Kotlin.
+- 📱 **Simple & User-Friendly Interface**
+  - Clean Android interface designed for ease of use.
 
 ---
 
@@ -34,14 +40,13 @@
 |------------|-------------|
 | **Language** | Kotlin |
 | **Platform** | Android Studio |
-| **UI** | XML Layouts |
-| **AI** | Firebase Generative AI API (Gemini) |
 | **Architecture** | MVVM |
-| **Image Handling** | Android Image Picker |
+| **AI Model** | Gemini 3 Flash Preview |
+| **Integration** | Firebase AI Logic |
+| **UI** | XML Layouts |
 | **Version Control** | Git & GitHub |
 
 ---
-
 
 ## 🚀 Getting Started
 
@@ -51,7 +56,7 @@
 - Android SDK
 - Kotlin
 - Firebase Project
-- Gemini API enabled in Firebase
+- Firebase AI Logic configured with Gemini 3 Flash Preview
 
 ### Installation
 
@@ -69,56 +74,43 @@ git clone https://github.com/your-username/dr-buddy.git
 
 5. Sync Gradle dependencies.
 
-6. Run the application on an emulator or Android device.
+6. Build and run the application on an Android device or emulator.
+
 
 ---
 
-## 📂 Project Structure
+## 🔄 How It Works
 
-```
-DrBuddy/
-│
-├── app/
-├── activities/
-├── viewmodel/
-├── model/
-├── repository/
-├── utils/
-├── res/
-└── AndroidManifest.xml
-```
-
----
-
-## 💡 How It Works
-
-1. Launch the application.
-2. Upload a medical report image or type medical information.
-3. The app sends the data to the Firebase Generative AI model.
-4. AI analyzes the content.
-5. Users receive a simplified explanation of the medical report.
+1. Open the Dr. Buddy application.
+2. Upload a medical report image or enter medical information manually.
+3. The application sends the content to **Gemini 3 Flash Preview** through Firebase AI Logic.
+4. The AI analyzes the report and generates:
+   - A simplified explanation in **English**
+   - A simplified explanation in **Sinhala**
+   - General recommendations on possible next steps for the patient
+5. Users can read the AI-generated explanation to better understand their medical report before consulting a healthcare professional.
 
 ---
 
 ## 🎯 Future Improvements
 
-- 🔍 OCR for extracting text from medical reports
-- 🌐 Multi-language support
-- 📊 Health history tracking
-- ❤️ Symptom checker
-- 📅 Appointment reminders
-- 📄 PDF report support
-- ☁️ Cloud backup with Firebase Authentication
+- OCR for automatic text extraction from medical reports
+- PDF report support
+- Voice input and speech output
+- Multi-language support beyond English and Sinhala
+- Medical report history
+- User authentication with Firebase
+- Secure cloud storage for reports
 
 ---
 
 ## ⚠️ Disclaimer
 
-> **Dr. Buddy is intended for educational and informational purposes only.**
+**Dr. Buddy is intended for educational and informational purposes only.**
 
-This application does **not** provide professional medical advice, diagnosis, or treatment. The AI-generated responses should **not** be considered a substitute for consultation with a qualified healthcare professional.
+The application does **not** provide medical advice, diagnosis, or treatment. AI-generated explanations and recommendations may not always be accurate and should **never** replace consultation with a qualified healthcare professional.
 
-Always seek the advice of your physician or another qualified healthcare provider regarding any medical condition or health concern. Never ignore professional medical advice or delay seeking treatment based on information provided by this application.
+Always consult a licensed doctor or healthcare provider regarding your medical condition. Never disregard professional medical advice or delay seeking treatment because of information provided by this application.
 
 ---
 
@@ -126,10 +118,11 @@ Always seek the advice of your physician or another qualified healthcare provide
 
 **Chamodi Lakshani**
 
-Bachelor of Health Science (Hons) in Health Information & Communication Technology (HICT)
+**Bachelor of Health Science (Hons) in Health Information & Communication Technology (HICT)**
 
-- 💼 LinkedIn: www.linkedin.com/in/chamodi-lakshani-47796841a
-- 📧 Email: chamodilakshani474@gmail.com
+📧 Email: chamodilakshani474@gmail.com
+
+🔗 LinkedIn: https://www.linkedin.com/in/chamodi-lakshani-47796841a
 
 ---
 
